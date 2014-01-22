@@ -1,7 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
 /**
- *  A simple class for person 1
+ *  A simple class for person 4
  *  returns their name and a
  *  modified string 
  *  
@@ -30,8 +30,16 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
-      //Person 1 put your implementation here
-      return null;
+      //Person 4 put your implementation here
+    	StringBuilder newString = new StringBuilder();
+    	
+    	for(int index = 0; index < input.length(); index++)
+    	{
+    		char charForString = input.charAt(index);
+    		charForString++;
+    		newString.append(charForString);
+    	}
+      return newString.toString();
     }
     
     /**
