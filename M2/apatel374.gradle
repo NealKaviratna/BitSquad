@@ -1,0 +1,21 @@
+//Amol Patel
+//Person 5
+
+//Apply java plugin and import java tasks
+apply plugin: 'java'
+
+
+//Set the default task to jar
+defaultTasks 'jar'
+
+//Set dependencies
+dependencies {
+    compile fileTree(dir: 'lib', includes: ['resources.jar'])
+}
+
+//Define contents and properties of jar
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+    }
+}
