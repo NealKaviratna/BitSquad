@@ -1,0 +1,33 @@
+//Neal Kaviratna
+
+//Set default task to execute jar
+defaultTasks  'jar'
+
+//Import java plugin
+apply plugin: 'java'
+
+//Set up properties
+sourceCompatibility = 1.7
+version = '1.0'
+
+//Include resources.jar
+dependencies { 
+    compile fileTree(dir: 'lib', includes: ['resources.jar']) 
+}
+
+//Redirect task compileJavaTest to compileTest
+task compileTest(dependsOn: compileTestJava) << {
+}
+
+
+//Define the contents of the jar file
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+    }
+}
+
+//Set up a location of repositories so that any needed library dependencies can be downloaded
+repositories {
+    mavenCentral()
+}
