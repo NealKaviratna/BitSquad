@@ -1,0 +1,19 @@
+//Kurt Bonatz (Person 3)
+
+//Import the java tasks
+apply plugin: 'java'
+
+//Include the needed resources.jar
+dependencies { 
+    compile fileTree(dir: 'lib', includes: ['resources.jar']) 
+} 
+
+//Made by Person 3 of the group
+version = 'Person 3'
+
+//Define the contents of the jar file
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+    }
+}
