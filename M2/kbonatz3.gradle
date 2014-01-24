@@ -3,6 +3,9 @@
 //Import the java tasks
 apply plugin: 'java'
 
+//Default task set to jar
+defaultTasks 'jar'
+
 //Include the needed resources.jar
 dependencies { 
     compile fileTree(dir: 'lib', includes: ['resources.jar']) 
