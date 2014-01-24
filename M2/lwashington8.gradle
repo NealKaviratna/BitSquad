@@ -1,0 +1,12 @@
+//Person2 : Leonard Washington
+apply plugin:'java'
+defaultTasks 'jar'
+
+dependencies {
+    compile fileTree(dir: 'lib', includes: ['resources.jar'])
+}
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version':'Person 2' , 'Main-Class' : 'AntLabMain'
+    }
+}
