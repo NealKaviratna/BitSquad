@@ -17,6 +17,6 @@ dependencies {
 //defining properties of jar file
 jar {
     manifest {
-        attributes 'Implementation-Title': 'M2', 'Implementation-Version': version , 'Main-Class' : 'AntLabMain'
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': Person 4, 'Main-Class' : 'AntLabMain'
     }
 }
