@@ -8,6 +8,8 @@ package edu.gatech.oad.antlab.person;
  *  @author Bob
  *  @version 1.1
  */
+
+
 public class Person5 {
   /** Holds the persons real name */
   private String name;
@@ -19,6 +21,9 @@ public class Person5 {
   public Person5(String pname) {
     name = pname;
   }
+  
+  
+  
   	/**
 	 * This method should take the string
 	 * input and return its characters rotated
@@ -30,8 +35,16 @@ public class Person5 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 5 put your implementation here
-	  return null;
+		String s1 = ""+input.charAt(0);
+		String s2 = ""+input.charAt(1);
+		String finalStr = "";
+		for(int i=2; i<input.length(); i++){ 
+			finalStr +=""+input.charAt(i);
+		}
+		finalStr+=s1;
+		finalStr+=s2;
+
+		return finalStr;
 	}
 	
 	/**
