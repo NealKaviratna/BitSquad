@@ -1,6 +1,6 @@
 //Hans Louis
 //Person 4
-
+/Users/hanslouis/git/BitSquad/M2/hlouis3.gradle
 //applying java plugin
 //Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
 
@@ -8,6 +8,10 @@ apply plugin: 'java'
 
 //sets default task
 defaultTasks 'jar'
+
+//Set up some variables (properties)
+sourceCompatibility = 1.7
+version = 1.0
 
 //setting dependencies
 dependencies {
@@ -17,6 +21,11 @@ dependencies {
 //defining properties of jar file
 jar {
     manifest {
-        attributes 'Implementation-Title': 'M2', 'Implementation-Version': Person 4, 'Main-Class' : 'AntLabMain'
+        attributes 'Implementation-Title': 'M2', 'Implementation-Version': 1.0, 'Main-Class' : 'AntLabMain'
     }
+}
+
+//setting location of repositories
+repositories {
+    mavenCentral()
 }
