@@ -1,8 +1,8 @@
 //Hans Louis
 //Person 4
-/Users/hanslouis/git/BitSquad/M2/hlouis3.gradle
+
 //applying java plugin
-//Import a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
+//imports a bunch of java related tasks like compileJava, compileJavaTest, clean, javadoc, jar
 
 apply plugin: 'java'
 
